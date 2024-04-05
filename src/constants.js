@@ -1,0 +1,15 @@
+export const scaleFactor = 4;
+
+
+export const dialogueData = {
+    pc: 'This is my PC, technically a MacBook Pro. I primarily work with JavaScript and Python, focusing on studying JS libraries such as Node.js and React to develop SaaS applications and web apps. Additionally, I am an avid IOS developer, studying Flutter and Swift frameworks, where I create educational apps tailored for high-schoolers (@ Hanlan Technologies). I have also designed numerous landing pages and websites for startups, including my own portfolios. Here is my <a href="https://www.linkedin.com/in/arlan-rakhmetzhanov-92593425a/" target="_blank">Linkedin</a>!',
+    "pseudoletter": 'This is my recommendation letter. I received it from head of administration during my 2-months internship at KAZ Minerals Management group. During my internship, I demonstrated keen interest in production activities and business processes, demonstrated practical programming skills in workshops with databases and artificial intelligence (OptimusAI by McKinsey & Company). Exhibited theoretical knowledge in information technologies such as Historian PI, My Kazmin, Visiofroth, SOC, SIEM, ERP Oracle OeBS, Metso. Conclusion: AI + metals = game changer.',
+    "sofa-table": "That's my sofa. Sometimes I can relax and watch some K-Dramas (Business Proposal and Start-up are my favs) or watch Y-Combinator podcasts.",
+    tv: 'That was supposed to be my laptop, but unfortunately, I could not find the proper model. Anyways, I am an avid follower of Tech YouTubers across various fields, including AITech, EdTech, and HardwareTech. Apart from my tech interests, I have a genuine passion for volleyball, which I have been playing since 2020. (2x international MVP awards, peer coach, Haikyuu fan)',
+    bed: 'Well, this is my bed. Great ideas come when I am lying on my bed. When an idea strikes, I have to build it or write it down or else I will not be able to sleep.',
+    resume: "This is my desk and on it is my resume. <a href='https://docs.google.com/document/d/1alB2Qgl4_9P5VwNEM0VHnSmB0o-uhqUzF1SUDcypI4g/edit?usp=sharing' target='_blank'>Check it out?</a> Contact me at arlan@serholdings.com if you have any interesting opportunities!",
+    projects: 'Info about this portfolio: It is made with kaboom.js, vanilla js, HTML/CSS, and Tiled framework.',
+    library: "There are some books on my shelves, including my own book about <a href='https://play.google.com/store/books/details/Arlan_Rakhmetzhanov_Doorway_to_Venture_Capital_An?id=ZxvpEAAAQBAJ&hl=en&gl=US' target='_blank'>Venture Capital (click to view).</a> Also, sometimes I love reading biographies about different people, such as: Elon Musk, Mark Zuckerberg, Richard Feynman etc.",
+    exit: "If you want to exit Arlan's portfolio, just close the tab. See you soon! (follow me on <a href='https://www.linkedin.com/in/arlan-rakhmetzhanov-92593425a/' target='_blank'>Linkedin</a> and <a href='https://www.instagram.com/iwbboo?igsh=aGZ0ZDc0dW9kMDZ6&utm_source=qr' target='_blank'>Instagram!)</a>"
+
+}
