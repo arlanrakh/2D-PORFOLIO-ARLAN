@@ -149,10 +149,6 @@ k.scene("main", async () => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var music = document.getElementById('bg-music');
-    music.volume = 0.1; // Volume
-  });
 
   
 k.go("main");
