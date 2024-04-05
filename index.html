@@ -81,6 +81,7 @@
       left: 50%; 
       transform: translateX(-50%); 
       color: #fff; 
+      user-select: none;
     }
 
     .moremiddle-bottom {
@@ -89,8 +90,17 @@
       bottom: -5px; 
       left: 50%; 
       transform: translateX(-50%); 
-      color: #fff; 
+      color: #fff;
+      user-select: none;
     }
+
+    @media screen and (max-width: 768px) {
+  .note,
+  .middle-bottom,
+  .moremiddle-bottom {
+    font-size: 1rem; /* Adjust font size for even smaller screens */
+  }
+}
 
       
     </style>
@@ -113,5 +123,9 @@
       <canvas id="game"></canvas>
     </div>
     <script type="module" src="src/main.js"></script>
+    <audio id="bg-music" loop autoplay>
+      <source src="medieval.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>    
   </body>
 </html>
