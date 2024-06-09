@@ -1,130 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Arlan Rakhmetzhanov's portfolio showcasing skills in AI, venture capital, and iOS/web development, featuring projects like DresserAI and Extracurrify.">
-    <meta name="keywords" content="Arlan Rakhmetzhanov, portfolio, AI, venture capital, iOS development, web development, DresserAI, Extracurrify, Hanlan Tech">
-    <title>Arlan Rakhmetzhanov's Portfolio</title>
-    <style>
-      @font-face {
-        font-family: monogram;
-        src: url(monogram.ttf);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arlan Rakhmetzhanov's portfolio showcasing skills in AI, venture capital, and iOS/web development, featuring projects like DresserAI and Extracurrify." />
+  <meta name="keywords" content="Arlan Rakhmetzhanov, portfolio, AI, venture capital, iOS development, web development, DresserAI, Extracurrify, Hanlan Tech" />
+  <title>Arlan Rakhmetzhanov's Portfolio</title>
+  <style>
+    @font-face {
+      font-family: monogram;
+      src: url(monogram.ttf);
+    }
 
-      body {
-        font-family: monogram, monospace;
-        font-size: 2rem;
-        overflow: hidden;
-      }
+    body {
+      font-family: monogram, monospace;
+      font-size: 2rem;
+      overflow: hidden;
+    }
 
-      #app {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
+    #app {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
 
-      #textbox {
-        position: absolute;
-        left: 10%;
-        right: 10%;
-        bottom: 2vh;
-        min-height: 10vh;
-        background: white;
-        border-radius: 3px;
-        outline-style: solid;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        word-spacing: 0.2rem;
-        filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
-      }
+    #textbox {
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      bottom: 2vh;
+      min-height: 10vh;
+      background: white;
+      border-radius: 3px;
+      outline-style: solid;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      word-spacing: 0.2rem;
+      filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
+    }
 
-      .ui-text {
-        margin: 0;
-        user-select: none;
-      }
+    .ui-text {
+      margin: 0;
+      user-select: none;
+    }
 
-      .ui-close-btn {
-        font-family: monogram, monospace;
-        border-style: none;
-        border-radius: 3px;
-        padding: 1rem;
-        font-size: inherit;
-      }
+    .ui-close-btn {
+      font-family: monogram, monospace;
+      border-style: none;
+      border-radius: 3px;
+      padding: 1rem;
+      font-size: inherit;
+    }
 
-      .btn-container {
-        align-items: flex-end;
-        margin-top: 1rem;
-      }
+    .btn-container {
+      align-items: flex-end;
+      margin-top: 1rem;
+    }
 
-      .note {
-        position: absolute;
-        left: 5%;
-        top: 1vh;
-        display: flex;
-        flex-direction: column;
-        color: rgb(238, 238, 238);
-        user-select: none;
-      }
+    .note {
+      position: absolute;
+      left: 5%;
+      top: 1vh;
+      display: flex;
+      flex-direction: column;
+      color: rgb(238, 238, 238);
+      user-select: none;
+    }
 
-      .middle-bottom {
-        position: absolute;
-        text-align: center;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        user-select: none;
-      }
+    .middle-bottom {
+      position: absolute;
+      text-align: center;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      user-select: none;
+    }
 
+    .moremiddle-bottom {
+      position: absolute;
+      text-align: center;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      user-select: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .note,
+      .middle-bottom,
       .moremiddle-bottom {
-        position: absolute;
-        text-align: center;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        user-select: none;
+        font-size: 1rem;
       }
-
-      @media screen and (max-width: 768px) {
-        .note,
-        .middle-bottom,
-        .moremiddle-bottom {
-          font-size: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Arlan Rakhmetzhanov's Portfolio</h1>
-    </header>
-    <main id="app">
-      <section>
-        <p class="note">Tap/Click around to move (BETA VERSION)</p>
-        <p class="middle-bottom">Welcome to Arlan's portfolio! (for official portfolio, visit <a href="https://arlanrakhmetzhanov.com">arlanrakhmetzhanov.com</a>)</p>
-        <p class="moremiddle-bottom">@ 2024 by Arlan Rakhmetzhanov. Genius programmer. Handsome. (Used: javascript, kaboom.js, Tiled, HTML/CSS)</p>
-        <div id="textbox-container" style="display: none">
-          <div id="textbox">
-            <p id="dialogue" class="ui-text"></p>
-            <div class="btn-container">
-              <button id="close" class="ui-close-btn">Close</button>
-            </div>
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arlan Rakhmetzhanov's Portfolio</h1>
+  </header>
+  <main id="app">
+    <section>
+      <p class="note">Tap/Click around to move (BETA VERSION)</p>
+      <p class="middle-bottom">Welcome to Arlan's portfolio! (for official portfolio, visit <a href="https://arlanrakhmetzhanov.com">arlanrakhmetzhanov.com</a>)</p>
+      <p class="moremiddle-bottom">@ 2024 by Arlan Rakhmetzhanov. Genius programmer. Handsome. (Used: javascript, kaboom.js, Tiled, HTML/CSS)</p>
+      <div id="textbox-container" style="display: none">
+        <div id="textbox">
+          <p id="dialogue" class="ui-text"></p>
+          <div class="btn-container">
+            <button id="close" class="ui-close-btn">Close</button>
           </div>
         </div>
-      </section>
-      <canvas id="game"></canvas>
-    </main>
-    <script type="module" src="src/main.js"></script>
-    <audio id="bg-music" loop autoplay>
-      <source src="medieval.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </body>
+      </div>
+    </section>
+    <canvas id="game"></canvas>
+  </main>
+  <script type="module" src="src/main.js"></script>
+  <audio id="bg-music" loop autoplay>
+    <source src="medieval.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+</body>
 </html>
